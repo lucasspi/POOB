@@ -1,0 +1,6 @@
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/bin/Debug/ca_Estacionamento.exe
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/bin/Debug/ca_Estacionamento.pdb
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/obj/x86/Debug/ca_Estacionamento.csprojResolveAssemblyReference.cache
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/obj/x86/Debug/ca_Estacionamento.csproj.CoreCompileInputs.cache
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/obj/x86/Debug/ca_Estacionamento.exe
+/Users/lucasspirandeli/Projects/ca_Estacionamento/ca_Estacionamento/obj/x86/Debug/ca_Estacionamento.pdb

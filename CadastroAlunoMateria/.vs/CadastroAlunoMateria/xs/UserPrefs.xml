@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{1C7D7B2E-1479-4EC5-942E-4ACA51EBD8D1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CadastroAlunoMateria/Aluno.cs">
+    <Files>
+      <File FileName="CadastroAlunoMateria/Program.cs" Line="1" Column="1" />
+      <File FileName="CadastroAlunoMateria/formNovoAluno.cs" Line="1" Column="1" />
+      <File FileName="CadastroAlunoMateria/Aluno.cs" Line="1" Column="1" />
+      <File FileName="CadastroAlunoMateria/Materia.cs" Line="36" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CadastroAlunoMateria PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,6 @@
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/bin/Debug/ca_Conta.exe
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/bin/Debug/ca_Conta.pdb
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/obj/x86/Debug/ca_Conta.csprojAssemblyReference.cache
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/obj/x86/Debug/ca_Conta.csproj.CoreCompileInputs.cache
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/obj/x86/Debug/ca_Conta.exe
+/Users/lucasspirandeli/Projects/ca_Conta/ca_Conta/obj/x86/Debug/ca_Conta.pdb

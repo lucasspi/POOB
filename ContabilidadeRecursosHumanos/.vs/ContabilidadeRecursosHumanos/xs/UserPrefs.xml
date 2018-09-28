@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{00EE27B5-9D9E-4022-B8C4-32181B3BC6D2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContabilidadeRecursosHumanos/Program.cs">
+    <Files>
+      <File FileName="ContabilidadeRecursosHumanos/Program.cs" Line="10" Column="12" />
+      <File FileName="ContabilidadeRecursosHumanos/FormRelatorio.cs" Line="1" Column="1" />
+      <File FileName="ContabilidadeRecursosHumanos/FormMain.cs" Line="1" Column="1" />
+      <File FileName="ContabilidadeRecursosHumanos/EmpregadoCLT.cs" Line="1" Column="1" />
+      <File FileName="ContabilidadeRecursosHumanos/EmpregadoHorista.cs" Line="1" Column="1" />
+      <File FileName="ContabilidadeRecursosHumanos/Empregado.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ContabilidadeRecursosHumanos PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Gerenciamento de Tarefas com Usuarios</title>
+  <link rel="stylesheet" href="css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- themify-icons -->
+        <link rel="stylesheet" href="css/themify-icons.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.transitions.css" />
+        <link rel="stylesheet" href="css/owl.carousel.css" /> 
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css" /> 
+        <!-- base -->
+        <link rel="stylesheet" href="css/base.css" /> 
+        <!-- elements -->
+        <link rel="stylesheet" href="css/elements.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="css/responsive.css" />
+        <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+</head>
+<body onload="readTask()">
+  <nav class="navbar navbar-light bg-warning mb-4">
+    <span class="navbar-brand mb-0 h1">Gerenciamento de Tarefas com Usuarios</span>
+  </nav>
+  <section class="no-padding position-relative cover-background tz-builder-bg-image border-none hero-style2 bg-img-one"  style="background-color:#efefef;" id="home" data-img-size="(W)1920px X (H)800px" style="background: linear-gradient(rgba(15,15,15,0), rgba(15,15,15,0)) repeat scroll 0% 0%, transparent url('http://placehold.it/1920x800') repeat scroll 0% 0%;">
+    <div class="container one-fourth-screen position-relative">
+        <div class="row">
+            <div class="slider-typography text-center xs-position-static">
+                <div class="slider-text-middle-main">
+                    <div class="slider-text-middle text-left xs-padding-40px-tb equalize xs-equalize-auto">
+                        <!-- contact form -->
+                        <div class="col-md-5 col-sm-5 col-xs-12 position-relative xs-margin-twenty-bottom display-table" style="">
+                            <div class="display-table-cell-vertical-middle">
+                                <div class="bg-white box-shadow-dark tz-background-color padding-seventeen border-radius-6 text-center xs-padding-thirteen">
+                                    
+                                    <form>
+                                        <h2 style ="text-align: left; padding-bottom: 20px; color: #333333;">Adicionar Usuario</h2>
+                                        <input type='text' placeholder='Nome' data-key='name' class='user-input'><br>
+                                        <input type='text' placeholder='E-mail' data-key='email' class='user-input'><br>
+                                        <input type='text' placeholder='Telefone' data-mask="(00) 0000-0000" data-key='telefone' class='user-input' ><br>
+                                        <button type='button' id="add-user-btn" class="default-submit btn btn-large propClone bg-deep-green text-white display-block width-100" >Adicionar Usuario</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 position-relative xs-margin-twenty-bottom display-table" id="edit-user-module" style="">
+                            <div class="display-table-cell-vertical-middle">
+                                <div class="bg-white box-shadow-dark tz-background-color padding-seventeen border-radius-6 text-center xs-padding-thirteen">
+                                <form>
+                                    <h2 style ="text-align: left; padding-bottom: 20px;">Editar Usuario</h2>
+                                        <input type="hidden" class="edit-userid">
+                                        <input type='text' placeholder='Nome' data-key='name' class='edit-user-input'><br>
+                                        <input type='text' placeholder='E-mail' data-key='email' class='edit-user-input'><br>
+                                        <input type='text'  placeholder='Telefone' data-mask="(00) 0000-0000" data-key='telefone' class='edit-user-input'><br>
+                                        <button type='button' id="edit-user-btn" class="default-submit btn btn-large propClone bg-deep-green text-white display-block width-100">Atualizar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end contact form -->
+                        <!-- slider text -->
+                            <div class="display-table-cell-vertical-middle">
+                                <h4 style = "color: #333333; margin-bottom: 20px; margin-top: 20px; font-size: 22px;">Tabela de Usuarios</h4>
+                                <ul id="user-list"></ul>
+                            <div id="user-detail"></div>
+                        </div>
+                        <!-- end slider text -->
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <div class="container" style = "margin:100px; ">
+    <h4 style = "color: #333333; margin-bottom: 20px; margin-top: 20px; font-size: 22px;">Tabela de Tarefas</h4>
+    <div class="row">
+      <div class="col-md-6" id="firstSection">
+        <form class="border p-4 mb-4 " id="form">
+
+          <div class="form-group">
+            <label >Tarefa</label>
+            <input type="text" class="form-control" id="task" placeholder="Nova Task">
+          </div>
+
+          <div class="form-group">
+            <label>Descriçao</label>
+            <input type="text" class="form-control" id="description" placeholder="Descriçao">
+          </div>
+          <div class="form-group">
+              <label>Data de Entrega</label>
+              <input type="text" class="form-control" data-mask="00/00/0000" id="dataentrega" placeholder="Data de Entrega">
+            </div>
+            <select id="usuario">
+              
+                <option value="Edgard">Edgard</option>
+                <option value="Lucas">Lucas</option>
+                <option value="Joao">Joao</option>
+                <option value="Maria">Maria</option>
+              </select>
+
+          <button type="submit"  id="button1" class="btn btn-primary"><i class="fas fa-plus"></i> ADICIONAR TASK</button>
+          <button style="display: none" id="button2" class="btn btn-success">Atualizar task</button>
+          <button style="display: none" id="button3" class="btn btn-danger">Cancelar</button>
+        </form>
+
+      </div>
+      <div class="col-md-6" id="cardSection">
+        
+       
+      </div>
+    </div>
+
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+  <script src="index.js"></script>
+  
+</body>
+
+</html>
+
+
